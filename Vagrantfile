@@ -18,8 +18,8 @@ sudo apt-get -y install r-base r-base-dev
 sudo R -e "install.packages('shiny', repos = 'http://cran.rstudio.com/', dep = TRUE)"
 sudo R -e "install.packages('rmarkdown', repos = 'http://cran.rstudio.com/', dep = TRUE)"
 sudo apt-get -y install gdebi-core
-wget http://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.2.3.368-amd64.deb
-sudo gdebi shiny-server-1.2.3.368-amd64.deb
+wget http://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.4.1.759-amd64.deb
+sudo gdebi shiny-server-1.4.1.759-amd64.deb
 sudo dpkg -i *.deb
 rm *.deb
 sudo ln -s /vagrant/apps /srv/shiny-server
